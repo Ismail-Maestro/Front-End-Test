@@ -1,6 +1,6 @@
 <h2>My Words</h2>
 <ul>
   <li *ngFor="let word of words">
-      <span [ngClass]="{'palindrome': word.isPalindrome === true, 'notPalindrome': word.isPalindrome === false}">{{word.label}}</span>
+      <span [ngClass]="{'text-success': word.isPalindrome === true, 'text-danger': word.isPalindrome === false}">{{word.label}}</span>
   </li>
 </ul>
